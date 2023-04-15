@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>dev.ercan.poc.cloud</groupId>
+  <artifactId>spring-cloud-grpc-concept-eureka</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>pom</packaging>
+
+  <name>spring-cloud-grpc-concept-eureka</name>
+  <description>PoC of Spring Boot/Cloud and gRPC by using Eureka Service Discovery</description>
+
+  <developers>
+    <developer>
+      <name>Ercan SORMAZ</name>
+      <email>me[at]ercan.dev</email>
+      <url>https://github.com/ercansormaz</url>
+      <properties>
+        <pgp>0x4C6B131C812FC43A</pgp>
+        <linkedin>https://www.linkedin.com/in/ercansormaz/</linkedin>
+      </properties>
+    </developer>
+  </developers>
+
+  <properties>
+    <java.version>17</java.version>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <maven-compiler-plugin.version>3.11.0</maven-compiler-plugin.version>
+  </properties>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>${maven-compiler-plugin.version}</version>
+        <configuration>
+          <source>${java.version}</source>
+          <target>${java.version}</target>
+          <encoding>${project.build.sourceEncoding}</encoding>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+
+</project>
