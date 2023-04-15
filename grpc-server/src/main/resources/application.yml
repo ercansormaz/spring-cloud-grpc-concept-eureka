@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: grpc-server
+
+  cloud:
+    config:
+      uri: ${CONFIG_SERVER_HOST:http://localhost}:${CONFIG_SERVER_PORT:8888}
+      fail-fast: true
+      enabled: true
+
+  config:
+    import: "optional:configserver:"

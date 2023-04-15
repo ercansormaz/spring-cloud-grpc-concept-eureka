@@ -1,0 +1,14 @@
+server:
+  port: 0
+
+grpc:
+  server:
+    port: 0
+
+eureka:
+  instance:
+    prefer-ip-address: true
+    instance-id: ${spring.application.name}:${random.value}
+  client:
+    service-url:
+      defaultZone: ${EUREKA_SERVER_HOST:http://localhost}:${EUREKA_SERVER_PORT:8761}/eureka
