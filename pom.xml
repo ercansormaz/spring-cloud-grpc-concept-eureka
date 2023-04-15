@@ -74,6 +74,7 @@
     <module>grpc-lib</module>
     <module>grpc-server</module>
     <module>grpc-client</module>
+    <module>gateway</module>
   </modules>
 
 </project>

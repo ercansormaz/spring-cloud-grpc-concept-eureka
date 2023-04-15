@@ -1,10 +1,13 @@
 server:
-  port: 8080
+  port: 0
+  servlet:
+    context-path: /v1/grpc-client
 
 eureka:
   instance:
     prefer-ip-address: true
     instance-id: ${spring.application.name}:${random.value}
+    health-check-url-path: ${server.servlet.context-path}/actuator/health
   client:
     service-url:
       defaultZone: ${EUREKA_SERVER_HOST:http://localhost}:${EUREKA_SERVER_PORT:8761}/eureka

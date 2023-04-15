@@ -1,0 +1,19 @@
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: hello-service
+          uri: lb://grpc-client
+          predicates:
+            - Path=/v1/grpc-client/**
+      discovery:
+        locator:
+          enabled: true
+
+eureka:
+  client:
+    service-url:
+      defaultZone: ${EUREKA_SERVER_HOST:http://localhost}:${EUREKA_SERVER_PORT:8761}/eureka
+
+server:
+  port: 8080
