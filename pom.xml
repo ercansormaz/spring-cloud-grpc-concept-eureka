@@ -66,4 +66,8 @@
     </plugins>
   </build>
 
+  <modules>
+    <module>config-server</module>
+  </modules>
+
 </project>
