@@ -18,4 +18,4 @@ grpc:
       negotiation-type: plaintext
 
     hello-service:
-      address: discovery:///grpc-server
+      address: static://localhost:9090 # TODO Consul discovery is not working with Spring Boot 3
